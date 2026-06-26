@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Form</title>
+</head>
+<body>
+
+<h2>Student Information Form</h2>
+
+<form method="POST">
+
+    Name:
+    <input type="text" name="name"><br><br>
+
+    Age:
+    <input type="number" name="age"><br><br>
+
+    Department:
+    <input type="text" name="department"><br><br>
+
+    College:
+    <input type="text" name="college"><br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+{% if name %}
+<hr>
+<h2>Entered Information</h2>
+
+<p><b>Name:</b> {{ name }}</p>
+<p><b>Age:</b> {{ age }}</p>
+<p><b>Department:</b> {{ department }}</p>
+<p><b>College:</b> {{ college }}</p>
+{% endif %}
+
+</body>
+</html>
